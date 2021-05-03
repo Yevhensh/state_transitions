@@ -2,7 +2,7 @@ import sbt._
 
 object Dependencies {
   object PureConfig {
-    private val pureConfigVersion = "0.15.1"
+    private val pureConfigVersion = "0.15.0"
     val pureconfig                = "com.github.pureconfig" %% "pureconfig" % pureConfigVersion
   }
 
