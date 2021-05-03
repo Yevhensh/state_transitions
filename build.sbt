@@ -11,7 +11,10 @@ lazy val settings = Seq(
     PureConfig.pureconfig,
     Http4s.dsl,
     Http4s.circe,
-    Http4s.blazeServer
+    Http4s.blazeServer,
+    Circe.core,
+    Circe.generic,
+    Circe.parser
   )
 )
 
