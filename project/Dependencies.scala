@@ -39,4 +39,9 @@ object Dependencies {
     private val flywayVersion = "7.8.2"
     val core                  = "org.flywaydb" % "flyway-core" % flywayVersion
   }
+
+  object Scalatest {
+    private val scalaTestVersion = "3.0.5"
+    val scalaTest                = "org.scalatest" %% "scalatest" % scalaTestVersion % "it, test"
+  }
 }
