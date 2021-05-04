@@ -1,14 +1,16 @@
 CREATE TABLE transitions_matrix
 (
     state_id    serial primary key,
-    state_name varchar(255) not null unique,
+    state_name  varchar(255) not null unique,
     transitions varchar[]    not null default []::varchar[]
 );
 
 CREATE TABLE entities
 (
-    entity_id serial primary key,
-    entity_name varchar(255) not null
+    entity_id   serial primary key,
+    entity_name varchar(255) not null,
+    state_name  varchar(255),
+    constraint state_name_by_fkey FOREIGN KEY references transitions_matrix(state_name) ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
 CREATE TABLE state_change_log

@@ -21,7 +21,8 @@ lazy val settings = Seq(
     Doobie.hikari,
     Doobie.postgres,
     Doobie.postgesqlCirce,
-    Flyway.core
+    Flyway.core,
+    Scalatest.scalaTest
   )
 )
 
