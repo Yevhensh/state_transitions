@@ -14,7 +14,14 @@ lazy val settings = Seq(
     Http4s.blazeServer,
     Circe.core,
     Circe.generic,
-    Circe.parser
+    Circe.parser,
+    Logging.scalaLogging,
+    Logging.logback,
+    Doobie.core,
+    Doobie.hikari,
+    Doobie.postgres,
+    Doobie.postgesqlCirce,
+    Flyway.core
   )
 )
 
